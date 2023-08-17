@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Coding thanks to AsmrProg tutoriel on YouTube -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Météo</title>
+</head>
+<body>
+    
+    <!-- Main div -->
+    <div class="container">
+        <!-- Search div -->
+        <div class="search-box">
+            <div class="i fa-solid fa-location-dot"></div>
+            <input type="text" placeholder="Votre ville">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oups! Ville Non Trouvé :/</p>
+        </div>
+
+        <!-- Img + temp + weather (sunny...) -->
+        <div class="weather-box">
+            <img src="">
+            <div class="tempbox">
+                <p class="mintemp"></p>
+                <p class="temperature"></p>
+                <p class="maxtemp"></p>
+            </div>
+            <p class="description"></p>
+        </div>
+
+        <!-- Humidity and wind speed -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidité</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Vent</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
